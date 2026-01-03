@@ -84,6 +84,3 @@ The degenerate behavior (predicting a single class) can come from a few common i
 ## 6) Summary
 
 The current run achieved overall accuracy near 50% but with completely broken per-class behavior: the model predicts only a single class. This suggests a pipeline or training bug (label handling, loss/logits, or frozen head). The next steps are quick diagnostic checks (label printing, parameter checks, overfit small subset) followed by targeted fixes (ensure optimizer includes head params, assert label ranges) and a short re-run. Adding unit tests for data and a short overfit test will make regressions easier to catch going forward.
-
----
-Generated on 2026-01-03 — based on files in repository: `report.md`, `part1_implementation/report.md`, `outputs/final/eval_best_model.json`, and `outputs/experiments_summary.json`.
