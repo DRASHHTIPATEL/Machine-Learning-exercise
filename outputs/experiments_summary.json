@@ -1,0 +1,16 @@
+[
+  {
+    "config": "configs/exp_imdb_baseline.yaml",
+    "status": "ok",
+    "duration_sec": 346.7034661769867,
+    "ckpt_path": null,
+    "val_metrics": null
+  },
+  {
+    "config": "configs/exp_imdb_freeze.yaml",
+    "status": "ok",
+    "duration_sec": 295.3028109073639,
+    "ckpt_path": null,
+    "val_metrics": null
+  }
+]

@@ -1,0 +1,27 @@
+model_name: "distilbert-base-uncased"
+dataset_name: "imdb"  # options: imdb, sst2 (or glue/sst2)
+use_fp16: false
+gradient_accumulation_steps: 1
+dataloader_num_workers: 2
+dataloader_pin_memory: false
+max_length: 256
+batch_size: 16
+learning_rate: 2e-5
+weight_decay: 0.01
+num_epochs: 3
+seed: 42
+early_stopping_patience: 3
+device: "cuda"  # set to 'cpu' if no GPU
+output_dir: "./outputs"
+logging_dir: "./runs"
+num_labels: 2
+augmentation:
+  random_token_mask_prob: 0.05
+  enable: false
+ablation:
+  freeze_base_model: false
+  use_distilbert: true
+checkpoint:
+  save_every_n_steps: 500
+  resume: false
+  path: ""

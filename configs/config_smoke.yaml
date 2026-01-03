@@ -1,0 +1,27 @@
+model_name: "distilbert-base-uncased"
+max_length: 128
+batch_size: 8
+learning_rate: 2e-5
+weight_decay: 0.0
+num_epochs: 1
+seed: 42
+early_stopping_patience: 1
+device: "cpu"
+output_dir: "./outputs"
+logging_dir: "./runs"
+num_labels: 2
+augmentation:
+  random_token_mask_prob: 0.0
+  enable: false
+ablation:
+  freeze_base_model: false
+  use_distilbert: true
+checkpoint:
+  save_every_n_steps: 0
+  resume: false
+  path: ""
+small_subset: 200
+use_fp16: false
+gradient_accumulation_steps: 1
+dataloader_num_workers: 0
+dataloader_pin_memory: false

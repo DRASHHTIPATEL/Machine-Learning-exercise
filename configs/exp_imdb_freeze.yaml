@@ -1,0 +1,28 @@
+dataset_name: "imdb"
+model_name: "distilbert-base-uncased"
+max_length: 128
+batch_size: 16
+learning_rate: 2e-5
+weight_decay: 0.01
+num_epochs: 2
+seed: 42
+early_stopping_patience: 2
+device: "cpu"
+output_dir: "./outputs/exp_imdb_freeze"
+logging_dir: "./runs"
+num_labels: 2
+augmentation:
+  random_token_mask_prob: 0.0
+  enable: false
+ablation:
+  freeze_base_model: true
+  use_distilbert: true
+checkpoint:
+  save_every_n_steps: 0
+  resume: false
+  path: ""
+small_subset: 2000
+use_fp16: false
+gradient_accumulation_steps: 1
+dataloader_num_workers: 2
+dataloader_pin_memory: false

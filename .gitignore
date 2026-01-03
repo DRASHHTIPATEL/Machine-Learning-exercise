@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual env
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and runtime
+runs/
+*.log
+
+# Outputs: ignore large checkpoints by default. Keep images and summaries.
+outputs/**/*.pt
+outputs/**/*.pth
+outputs/**/*.ckpt
+outputs/**/*.bin
+outputs/*.pt
+outputs/*.pth
+outputs/*.ckpt
+
+# Allow images and summary files that are useful to inspect
+!outputs/**/attention_example.png
+!outputs/**/experiments_summary.json
+!outputs/**/confusion_*.png
+!outputs/**/final_package.zip
+
+# OS
+.DS_Store
+Thumbs.db

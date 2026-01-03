@@ -1,0 +1,4 @@
+# Use Git LFS for common large binary model files (enable LFS on your machine / repo first)
+outputs/**/*.pt filter=lfs diff=lfs merge=lfs -text
+outputs/**/*.pth filter=lfs diff=lfs merge=lfs -text
+outputs/**/*.ckpt filter=lfs diff=lfs merge=lfs -text
