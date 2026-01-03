@@ -57,7 +57,7 @@ This dataset was chosen for reproducibility, fast iteration, and well-establishe
 ### Running the Code
 
 Install dependencies:
-```bash
+bash
 pip install -r requirements.txt
 
 Train the model:
@@ -124,8 +124,6 @@ Improvements Made
 	•	Clear explanation of why each change matters
 
 The review is written in a first-person, engineering-focused style and included directly as part of the submission.
-
-⸻
 
 Bonus Challenge: Scaling Law Analysis
 
